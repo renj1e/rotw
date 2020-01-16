@@ -135,7 +135,7 @@ $(document).ready(function(){
 
   //===== Sticky Header =====//
   var menu_height = $('header').innerHeight();
-  var screen_height = $(window).height();
+  var screen_height = $(window).height() + 100;
   $(window).on("scroll", function () {
     var scroll = $(window).scrollTop();
     if (scroll >= menu_height) {
