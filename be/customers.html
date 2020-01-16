@@ -1,0 +1,493 @@
+<!doctype html>
+<html lang="en" class="h-100">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="favicon.png" />
+
+
+    <!-- Material design icon fonts CSS -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Google fonts CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="assets/vendor/bootstrap-4.3.1/css/bootstrap.css" rel="stylesheet">
+
+    <!-- dataTable CSS -->
+    <link href="assets/vendor/DataTables-1.10.18/css/dataTables.bootstrap4.min.css" rel="stylesheet">
+
+    <!-- footable CSS -->
+    <link href="assets/vendor/footable-bootstrap/css/footable.bootstrap.min.css" rel="stylesheet">
+
+    <!-- custom scrollbar CSS -->
+    <link href="assets/vendor/malihu-custom-scrollbar-plugin-master/jquery.mCustomScrollbar.min.css" rel="stylesheet">
+
+    <!-- Customized CSS -->
+    <link href="assets/css/otw.css" id="link" rel="stylesheet">
+
+    <title>On The Way : Admin Panel</title>
+</head>
+
+<body class="h-100">
+    <div class="loader">
+        <div>
+            <div class="loader-animation">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <br>
+            <h2 class="mt-4"><span class="font-weight-light"></span>OTW</h2>
+            <p class="text-mute">Your page is loading...</p>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="sidebar h-100 smalls scroll-y" style="background-image: url(assets/img/sidebar-4.png); background-repeat: no-repeat; background-size: 100%; background-position: center bottom;">
+            <a class="navbar-brand d-flex" href="#">
+                <div class="w-auto v-m mr-3">
+                    <h1 class="m-0 font-weight-bold template-primary">OT<span class="font-weight-bold template-primary-light small">W</span></h1>
+                </div>
+                <div class="d-flex flex-column logo-text">
+                    <h4 class="m-0"><span class="font-weight-bold">Admin</span>
+                    </h4>
+                    <p class="m-0"><small class="text-mute text-uppercase d-block font-weight-bold">panel</small></p>
+                </div>
+            </a>
+            <div class="sidebar-profile text-center">
+                <figure class="avatar avatar-120 avatar-circle"><img src="assets/img/user1.jpg" alt=""></figure>
+                <div class="dropdown mt-3">
+                    <button class="btn btn-link dropdown-toggle no-caret w-100" type="button" id="dropdownMenuButton13" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="d-flex justify-content-center">
+                            <span class="ml-3">
+                                Juan dela Cruz<br>
+                                <span class="text-mute small">Admin</span>
+                            </span>
+                            <i class="material-icons  align-self-center ml-2 icon-right">keyboard_arrow_down</i>
+                        </span>
+                    </button>
+                    <div class="dropdown-menu w-100 text-center " aria-labelledby="dropdownMenuButton13">
+                        <a class="dropdown-item" href="profile.html">My Profile</a>
+                        <a class="dropdown-item" href="#">Activity</a>
+                        <a class="dropdown-item text-danger" href="#">Sign Out <i class="material-icons icon-right icon">exit_to_app</i></a>
+                    </div>
+                </div>
+            </div>
+
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html"><i class="material-icons icon">dashboard</i><span class="menu-text">Dashboard</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="riders.html"><i class="material-icons icon">directions_bike</i><span class="menu-text">Riders</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="customers.html"><i class="material-icons icon">group</i><span class="menu-text">Customers</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="products.html"><i class="material-icons icon">fastfood</i><span class="menu-text">Products</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="stores.html"><i class="material-icons icon">local_convenience_store</i><span class="menu-text">Stores</span></a>
+                </li>
+            </ul>
+        </div>
+        <div class="content h-100 d-flex flex-column w-100">
+            <header class="header fixed-top ">
+                <!-- navbar -->
+                <nav class="container-fluid">
+                    <div class="row">
+                        <div class="col-auto align-self-center">
+                            <div class="row h-100">
+                                <div class="col-auto">
+                                    <button class="btn btn-sm btn-link menu-btn" type="button">
+                                        <i class="material-icons">menu</i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col text-center align-self-center px-0 ">
+                            <div class="btn-group shadow-sm  d-none d-md-inline-flex" role="group" aria-label="Basic example">
+                                <a href="index.html" class="btn text-uppercase px-3 btn-sm btn-default">Dashboard</a>
+                                <a href="chat.html" class="btn text-uppercase px-3 btn-sm btn-default">Chat <span class="badge badge-danger">5</span></a>
+                            </div>
+                        </div>
+                        <div class="col-auto text-right align-self-center">
+                            <div class="btn-group">
+                                <div class="dropdown">
+                                    <button class="btn btn-link dropdown-toggle no-caret" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="material-icons">notifications</i> <span class="badge badge-danger notif_count">3</span>
+                                    </button>
+                                    <div class="dropdown-menu align-center pb-0" aria-labelledby="dropdownMenuButton2">
+                                        <div class="arrow pink-gradient"></div>
+                                        <div class="bg-template text-white py-3 text-center">
+                                            <h6 class="mb-0">Messages</h6>
+                                            <p>Just Recieved Messages</p>
+                                        </div>
+                                        <div class="notification-row new">
+                                            <div class="row">
+                                                <div class="col-auto">
+                                                    <figure class="avatar avatar-50">
+                                                        <img src="assets/img/user3.jpg" alt="" class="mCS_img_loaded">
+                                                    </figure>
+                                                </div>
+                                                <div class="col pl-0">
+                                                    <p class="mb-1">
+                                                        <span>John Johnson</span>
+                                                        <small class="text-mute-high float-right">1 day ago</small>
+                                                    </p>
+                                                    <small class="text-mute">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.</small>
+                                                    <br>
+                                                    <p class="small mt-2"><a href="">Reply</a>
+                                                        <a href="" class="ml-2">View</a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="notification-row">
+                                            <div class="row">
+                                                <div class="col-auto">
+                                                    <figure class="avatar avatar-40">
+                                                        <img src="assets/img/user2.jpg" alt="" class="mCS_img_loaded">
+                                                    </figure>
+                                                </div>
+                                                <div class="col pl-0">
+                                                    <p class="mb-0">
+                                                        <span>Ananya Chings</span>
+                                                        <small class="text-mute-high float-right">2 day ago</small>
+                                                    </p>
+                                                    <small class="text-mute">Cras sit amet nibh libero... </small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="notification-row">
+                                            <div class="row">
+                                                <div class="col-auto">
+                                                    <figure class="avatar avatar-40">
+                                                        <img src="assets/img/user4.jpg" alt="" class="mCS_img_loaded">
+                                                    </figure>
+                                                </div>
+                                                <div class="col pl-0">
+                                                    <p class="mb-0">
+                                                        <span>Mark John</span>
+                                                        <small class="text-mute-high float-right">2 day ago</small>
+                                                    </p>
+                                                    <small class="text-mute">Cras sit amet nibh libero... </small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+
+            <!-- Begin page content -->
+            <main class="flex-shrink-0">
+                <div class="container-fluid" id="main-container">
+                    <div class="row mb-4">
+                        <div class="container py-4">
+                            <div class="row">
+                                <div class="col">
+                                    <h5 class="font-weight-normal template-primary">Customers</h5>
+                                    <p class="text-secondary mb-0">All registered customers</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="container">
+                            <div class="card border-0 shadow-sm mb-4">
+                                <div class="card-body">
+                                    <table class="table table-striped border" id="dataTables-example">
+                                        <thead>
+                                            <tr>
+                                                <th>Name</th>
+                                                <th>Contact</th>
+                                                <th>Total Delivered orders</th>
+                                                <th>Last Visit</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="odd">
+                                                <td>
+                                                    <figure class="rounded-circle avatar avatar-30 mr-2"><img src="assets/img/user1.jpg" alt=""></figure>Joe Berry
+                                                </td>
+                                                <td>
+                                                    <p class="mb-0"><small>+63 000 000 0000</small></p>
+                                                    <p class="mb-0"><small>Poblacion, Alaminos City, Pangasinan</small></p>
+                                                    <p class="mb-0">
+                                                        <a href="" class=" btn btn-link btn-sm border">
+                                                            <img class="border-0 vm" src="assets/img/facebook.png" alt="">
+                                                        </a>
+                                                    </p>
+                                                </td>                                                
+                                                <td class="center">40</td>
+                                                <td class="center"><span class="btn btn-outline-success btn-sm">Dec 30, 2019</span></td>
+                                            </tr>
+                                            <tr class="even ">
+                                                <td>
+                                                    <figure class="rounded-circle avatar avatar-30 mr-2"><img src="assets/img/user2.jpg" alt=""></figure>Jhong Hillary
+                                                </td>
+                                                <td>
+                                                    <p class="mb-0"><small>+63 000 000 0000</small></p>
+                                                    <p class="mb-0"><small>Poblacion, Alaminos City, Pangasinan</small></p>
+                                                    <p class="mb-0">
+                                                        <a href="" class=" btn btn-link btn-sm border">
+                                                            <img class="border-0 vm" src="assets/img/facebook.png" alt="">
+                                                        </a>
+                                                    </p>
+                                                </td>                                                
+                                                <td class="center">18</td>
+                                                <td class="center"><span class="btn btn-outline-success btn-sm">Dec 30, 2019</span></td>
+                                            </tr>
+                                            <tr class="odd">
+                                                <td>
+                                                    <figure class="rounded-circle avatar avatar-30 mr-2"><img src="assets/img/user3.jpg" alt=""></figure>Astha Amigo
+                                                </td>
+                                                <td>
+                                                    <p class="mb-0"><small>+63 000 000 0000</small></p>
+                                                    <p class="mb-0"><small>Poblacion, Alaminos City, Pangasinan</small></p>
+                                                    <p class="mb-0">
+                                                        <a href="" class=" btn btn-link btn-sm border">
+                                                            <img class="border-0 vm" src="assets/img/facebook.png" alt="">
+                                                        </a>
+                                                    </p>
+                                                </td>                                                
+                                                <td class="center">10</td>
+                                                <td class="center"><span class="btn btn-outline-success btn-sm">Dec 30, 2019</span></td>                                                
+                                            </tr>
+                                            <tr class="even ">
+                                                <td>
+                                                    <figure class="rounded-circle avatar avatar-30 mr-2"><img src="assets/img/user1.jpg" alt=""></figure>Lucky Manzano
+                                                </td>
+                                                <td>
+                                                    <p class="mb-0"><small>+63 000 000 0000</small></p>
+                                                    <p class="mb-0"><small>Poblacion, Alaminos City, Pangasinan</small></p>
+                                                    <p class="mb-0">
+                                                        <a href="" class=" btn btn-link btn-sm border">
+                                                            <img class="border-0 vm" src="assets/img/facebook.png" alt="">
+                                                        </a>
+                                                    </p>
+                                                </td>                                                
+                                                <td class="center">19</td>
+                                                <td class="center"><span class="btn btn-outline-success btn-sm">Dec 30, 2019</span></td>                                                
+                                            </tr>
+                                            <tr class="odd">
+                                                <td>
+                                                    <figure class="rounded-circle avatar avatar-30 mr-2"><img src="assets/img/user3.jpg" alt=""></figure>John Doe
+                                                </td>
+                                                <td>
+                                                    <p class="mb-0"><small>+63 000 000 0000</small></p>
+                                                    <p class="mb-0"><small>Poblacion, Alaminos City, Pangasinan</small></p>
+                                                    <p class="mb-0">
+                                                        <a href="" class=" btn btn-link btn-sm border">
+                                                            <img class="border-0 vm" src="assets/img/facebook.png" alt="">
+                                                        </a>
+                                                    </p>
+                                                </td>                                                
+                                                <td class="center">40</td>
+                                                <td class="center"><span class="btn btn-outline-success btn-sm">Dec 30, 2019</span></td>                                                
+                                            </tr>
+                                            <tr class="even ">
+                                                <td>
+                                                    <figure class="rounded-circle avatar avatar-30 mr-2"><img src="assets/img/user1.jpg" alt=""></figure>Jhong Hillary
+                                                </td>
+                                                <td>
+                                                    <p class="mb-0"><small>+63 000 000 0000</small></p>
+                                                    <p class="mb-0"><small>Poblacion, Alaminos City, Pangasinan</small></p>
+                                                    <p class="mb-0">
+                                                        <a href="" class=" btn btn-link btn-sm border">
+                                                            <img class="border-0 vm" src="assets/img/facebook.png" alt="">
+                                                        </a>
+                                                    </p>
+                                                </td>                                                
+                                                <td class="center">18</td>
+                                                <td class="center"><span class="btn btn-outline-danger btn-sm">July 30, 2019</span></td>                                                
+                                            </tr>
+                                            <tr class="odd">
+                                                <td>
+                                                    <figure class="rounded-circle avatar avatar-30 mr-2"><img src="assets/img/user3.jpg" alt=""></figure>Astha Amigo
+                                                </td>
+                                                <td>
+                                                    <p class="mb-0"><small>+63 000 000 0000</small></p>
+                                                    <p class="mb-0"><small>Poblacion, Alaminos City, Pangasinan</small></p>
+                                                    <p class="mb-0">
+                                                        <a href="" class=" btn btn-link btn-sm border">
+                                                            <img class="border-0 vm" src="assets/img/facebook.png" alt="">
+                                                        </a>
+                                                    </p>
+                                                </td>                                                
+                                                <td class="center">17</td>
+                                                <td class="center"><span class="btn btn-outline-danger btn-sm">July 30, 2019</span></td>                                                
+                                            </tr>
+                                            <tr class="even ">
+                                                <td>
+                                                    <figure class="rounded-circle avatar avatar-30 mr-2"><img src="assets/img/user2.jpg" alt=""></figure>John Doe
+                                                </td>
+                                                <td>
+                                                    <p class="mb-0"><small>+63 000 000 0000</small></p>
+                                                    <p class="mb-0"><small>Poblacion, Alaminos City, Pangasinan</small></p>
+                                                    <p class="mb-0">
+                                                        <a href="" class=" btn btn-link btn-sm border">
+                                                            <img class="border-0 vm" src="assets/img/facebook.png" alt="">
+                                                        </a>
+                                                    </p>
+                                                </td>                                                
+                                                <td class="center">50</td>
+                                                <td class="center"><span class="btn btn-outline-success btn-sm">Dec 30, 2019</span></td>
+                                            </tr>
+                                            <tr class="odd">
+                                                <td>
+                                                    <figure class="rounded-circle avatar avatar-30 mr-2"><img src="assets/img/user2.jpg" alt=""></figure>Jhong Hillary
+                                                </td>
+                                                <td>
+                                                    <p class="mb-0"><small>+63 000 000 0000</small></p>
+                                                    <p class="mb-0"><small>Poblacion, Alaminos City, Pangasinan</small></p>
+                                                    <p class="mb-0">
+                                                        <a href="" class=" btn btn-link btn-sm border">
+                                                            <img class="border-0 vm" src="assets/img/facebook.png" alt="">
+                                                        </a>
+                                                    </p>
+                                                </td>                                                
+                                                <td class="center">20</td>
+                                                <td class="center"><span class="btn btn-outline-danger btn-sm">July 30, 2019</span></td>                                                
+                                            </tr>
+                                            <tr class="even ">
+                                                <td>
+                                                    <figure class="rounded-circle avatar avatar-30 mr-2"><img src="assets/img/user2.jpg" alt=""></figure>Astha Amigo
+                                                </td>
+                                                <td>
+                                                    <p class="mb-0"><small>+63 000 000 0000</small></p>
+                                                    <p class="mb-0"><small>Poblacion, Alaminos City, Pangasinan</small></p>
+                                                    <p class="mb-0">
+                                                        <a href="" class=" btn btn-link btn-sm border">
+                                                            <img class="border-0 vm" src="assets/img/facebook.png" alt="">
+                                                        </a>
+                                                    </p>
+                                                </td>                                                
+                                                <td class="center">15</td>
+                                                <td class="center"><span class="btn btn-outline-success btn-sm">Dec 30, 2019</span></td>
+                                            </tr>
+                                            <tr class="odd">
+                                                <td>
+                                                    <figure class="rounded-circle avatar avatar-30 mr-2"><img src="assets/img/user1.jpg" alt=""></figure>Lucky Manzano
+                                                </td>
+                                                <td>
+                                                    <p class="mb-0"><small>+63 000 000 0000</small></p>
+                                                    <p class="mb-0"><small>Poblacion, Alaminos City, Pangasinan</small></p>
+                                                    <p class="mb-0">
+                                                        <a href="" class=" btn btn-link btn-sm border">
+                                                            <img class="border-0 vm" src="assets/img/facebook.png" alt="">
+                                                        </a>
+                                                    </p>
+                                                </td>                                                
+                                                <td class="center">15</td>
+                                                <td class="center"><span class="btn btn-outline-danger btn-sm">July 30, 2019</span></td>                                                
+                                            </tr>
+                                            <tr class="even ">
+                                                <td>
+                                                    <figure class="rounded-circle avatar avatar-30 mr-2"><img src="assets/img/user1.jpg" alt=""></figure>John Doe
+                                                </td>
+                                                <td>
+                                                    <p class="mb-0"><small>+63 000 000 0000</small></p>
+                                                    <p class="mb-0"><small>Poblacion, Alaminos City, Pangasinan</small></p>
+                                                    <p class="mb-0">
+                                                        <a href="" class=" btn btn-link btn-sm border">
+                                                            <img class="border-0 vm" src="assets/img/facebook.png" alt="">
+                                                        </a>
+                                                    </p>
+                                                </td>                                                
+                                                <td class="center">50</td>
+                                                <td class="center"><span class="btn btn-outline-success btn-sm">Dec 30, 2019</span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <!-- /.table-responsive -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </main>
+
+            <footer class="footer mt-auto">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <p>Copyright 2020 : On The Way</p>
+                        </div>
+                    </div>
+
+                </div>
+            </footer>
+        </div>
+
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js//popper.min.js"></script>
+    <script src="assets/vendor/bootstrap-4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- cookie css -->
+    <script src="assets/vendor/cookie/jquery.cookie.js"></script>
+    <!-- custom scrollbar -->
+    <script src="assets/vendor/malihu-custom-scrollbar-plugin-master/jquery.mCustomScrollbar.concat.min.js"></script>
+
+    <!-- DataTable jquery file -->
+    <script src="assets/vendor/DataTables-1.10.18/js/jquery.dataTables.min.js"></script>
+    <script src="assets/vendor/DataTables-1.10.18/js/dataTables.bootstrap4.min.js"></script>
+
+    <!-- Footable jquery file -->
+    <script src="assets/vendor/footable-bootstrap/js/footable.min.js"></script>
+
+    <!-- Template main js -->
+    <script src="assets/js/main.js"></script>
+
+    <!-- color picker and Layout selector main js -->
+    <script src="assets/js/layout-colorpicker.js"></script>
+
+    <!-- page specific script -->
+    <script>
+        'user strict'
+        $(document).ready(function() {
+            /* data Table */
+            $('#dataTables-example').DataTable({
+                responsive: true,
+                "order": [
+                    [3, "desc"]
+                ]
+            });
+
+            /* footable  */
+            $(".footable").footable({
+                "paging": {
+                    "enabled": true,
+                    "position": "center"
+                }
+            });
+
+
+        });
+
+    </script>
+
+</body>
+
+</html>

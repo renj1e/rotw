@@ -1,0 +1,644 @@
+<!doctype html>
+<html lang="en" class="h-100">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="favicon.png" />
+
+
+    <!-- Material design icon fonts CSS -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Google fonts CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+
+
+    <!-- Bootstrap CSS -->
+    <link href="assets/vendor/bootstrap-4.3.1/css/bootstrap.css" rel="stylesheet">
+
+    <!-- custom scrollbar CSS -->
+    <link href="assets/vendor/malihu-custom-scrollbar-plugin-master/jquery.mCustomScrollbar.min.css" rel="stylesheet">
+
+    <!-- Customized CSS -->
+    <link href="assets/css/otw.css" id="link" rel="stylesheet">
+
+    <title>On The Way : Admin Panel</title>
+</head>
+
+<body class="h-100">
+    <div class="loader">
+        <div>
+            <div class="loader-animation">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <br>
+            <h2 class="mt-4"><span class="font-weight-light"></span>OTW</h2>
+            <p class="text-mute">Your page is loading...</p>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="sidebar h-100 smalls scroll-y" style="background-image: url(assets/img/sidebar-4.png); background-repeat: no-repeat; background-size: 100%; background-position: center bottom;">
+            <a class="navbar-brand d-flex" href="#">
+                <div class="w-auto v-m mr-3">
+                    <h1 class="m-0 font-weight-bold template-primary">OT<span class="font-weight-bold template-primary-light small">W</span></h1>
+                </div>
+                <div class="d-flex flex-column logo-text">
+                    <h4 class="m-0"><span class="font-weight-bold">Admin</span>
+                    </h4>
+                    <p class="m-0"><small class="text-mute text-uppercase d-block font-weight-bold">panel</small></p>
+                </div>
+            </a>
+            <div class="sidebar-profile text-center">
+                <figure class="avatar avatar-120 avatar-circle"><img src="assets/img/user1.jpg" alt=""></figure>
+                <div class="dropdown mt-3">
+                    <button class="btn btn-link dropdown-toggle no-caret w-100" type="button" id="dropdownMenuButton13" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="d-flex justify-content-center">
+                            <span class="ml-3">
+                                Juan dela Cruz<br>
+                                <span class="text-mute small">Admin</span>
+                            </span>
+                            <i class="material-icons  align-self-center ml-2 icon-right">keyboard_arrow_down</i>
+                        </span>
+                    </button>
+                    <div class="dropdown-menu w-100 text-center " aria-labelledby="dropdownMenuButton13">
+                        <a class="dropdown-item" href="profile.html">My Profile</a>
+                        <a class="dropdown-item" href="#">Activity</a>
+                        <a class="dropdown-item text-danger" href="#">Sign Out <i class="material-icons icon-right icon">exit_to_app</i></a>
+                    </div>
+                </div>
+            </div>
+
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html"><i class="material-icons icon">dashboard</i><span class="menu-text">Dashboard</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="riders.html"><i class="material-icons icon">directions_bike</i><span class="menu-text">Riders</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="customers.html"><i class="material-icons icon">group</i><span class="menu-text">Customers</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="products.html"><i class="material-icons icon">fastfood</i><span class="menu-text">Products</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="stores.html"><i class="material-icons icon">local_convenience_store</i><span class="menu-text">Stores</span></a>
+                </li>
+            </ul>
+        </div>
+        <div class="content h-100 d-flex flex-column w-100">
+            <header class="header">
+                <!-- Fixed navbar -->
+                <nav class="container-fluid">
+                    <div class="row">
+                        <div class="col-auto align-self-center">
+                            <div class="row h-100">
+                                <div class="col-auto">
+                                    <button class="btn btn-sm btn-link menu-btn" type="button">
+                                        <i class="material-icons">menu</i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col text-center align-self-center px-0 ">
+                            <div class="btn-group shadow-sm  d-none d-md-inline-flex" role="group" aria-label="Basic example">
+                                <a href="index.html" class="btn text-uppercase px-3 btn-sm btn-default">Dashboard</a>
+                                <a href="chat.html" class="btn text-uppercase px-3 btn-sm btn-default active">Chat <span class="badge badge-danger">5</span></a>
+                            </div>
+                        </div>
+                        <div class="col-auto text-right align-self-center">
+                            <div class="btn-group">
+                                <div class="dropdown">
+                                    <button class="btn btn-link dropdown-toggle no-caret" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="material-icons">notifications</i> <span class="badge badge-danger notif_count">3</span>
+                                    </button>
+                                    <div class="dropdown-menu align-center pb-0" aria-labelledby="dropdownMenuButton2">
+                                        <div class="arrow pink-gradient"></div>
+                                        <div class="bg-template text-white py-3 text-center">
+                                            <h6 class="mb-0">Messages</h6>
+                                            <p>Just Recieved Messages</p>
+                                        </div>
+                                        <div class="notification-row new">
+                                            <div class="row">
+                                                <div class="col-auto">
+                                                    <figure class="avatar avatar-50">
+                                                        <img src="assets/img/user3.jpg" alt="" class="mCS_img_loaded">
+                                                    </figure>
+                                                </div>
+                                                <div class="col pl-0">
+                                                    <p class="mb-1">
+                                                        <span>John Johnson</span>
+                                                        <small class="text-mute-high float-right">1 day ago</small>
+                                                    </p>
+                                                    <small class="text-mute">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.</small>
+                                                    <br>
+                                                    <p class="small mt-2"><a href="">Reply</a>
+                                                        <a href="" class="ml-2">View</a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="notification-row">
+                                            <div class="row">
+                                                <div class="col-auto">
+                                                    <figure class="avatar avatar-40">
+                                                        <img src="assets/img/user2.jpg" alt="" class="mCS_img_loaded">
+                                                    </figure>
+                                                </div>
+                                                <div class="col pl-0">
+                                                    <p class="mb-0">
+                                                        <span>Ananya Chings</span>
+                                                        <small class="text-mute-high float-right">2 day ago</small>
+                                                    </p>
+                                                    <small class="text-mute">Cras sit amet nibh libero... </small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="notification-row">
+                                            <div class="row">
+                                                <div class="col-auto">
+                                                    <figure class="avatar avatar-40">
+                                                        <img src="assets/img/user4.jpg" alt="" class="mCS_img_loaded">
+                                                    </figure>
+                                                </div>
+                                                <div class="col pl-0">
+                                                    <p class="mb-0">
+                                                        <span>Mark John</span>
+                                                        <small class="text-mute-high float-right">2 day ago</small>
+                                                    </p>
+                                                    <small class="text-mute">Cras sit amet nibh libero... </small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+
+            <!-- Begin page content -->
+            <main class="flex-shrink-0">
+                <div class="container-fluid" id="main-container">
+
+                    <div class="row">
+                        <div class="container-fluid px-0">
+                            <header class="col-12 border-top border-bottom">
+                                <!-- Fixed navbar -->
+                                <nav class="navbar px-0">
+                                    <div class="mr-auto d-flex col p-0">
+                                        <div class="custom-control custom-checkbox mx-2 mt-1">
+                                            <input type="checkbox" class="custom-control-input selectallmail" id="customCheck1">
+                                            <label class="custom-control-label" for="customCheck1"> All</label>
+                                        </div>
+                                        <button class="btn btn-sm btn-link" type="button">
+                                            <span class="material-icons">delete</span>
+                                        </button>
+                                        <button class="btn btn-sm btn-link" type="button">
+                                            <span class="material-icons">share</span>
+                                        </button>
+                                        <div class="dropdown">
+                                            <button class="btn btn-sm dropdown-toggle btn-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" type="button">
+                                                <span class="material-icons">flag</span>
+                                            </button>
+                                            <div class="dropdown-menu dropdown-menu-sm mt-2">
+                                                <a class="dropdown-item border-status border-primary text-dark" href="#">Primary</a>
+                                                <a class="dropdown-item border-status border-secondary text-dark" href="#">Secondary</a>
+                                                <a class="dropdown-item border-status border-success text-dark" href="#">Important</a>
+                                                <a class="dropdown-item border-status border-warning text-dark" href="#">Warning</a>
+                                                <a class="dropdown-item border-status border-info text-dark" href="#">Minor</a>
+                                                <a class="dropdown-item border-status border-danger text-dark" href="#">Highly Important</a>
+                                            </div>
+                                        </div>
+                                        <form class="form-inline ml-3 d-none d-md-inline-block">
+                                            <input class="form-control form-control-sm" type="text" placeholder="Search in mail..">
+                                            <button class="btn btn-link btn-sm" type="button">
+                                                <span class="material-icons">search</span>
+                                            </button>
+                                        </form>
+                                    </div>
+                                    <div class="d-flex text-right  ">
+                                        <button class="btn btn-link" type="button" data-toggle="tooltip" title="" data-original-title="Refresh">
+                                            <span class="material-icons">sync</span>
+                                        </button>
+                                        <button class="btn btn-link text-hide-xs" type="button" id="template-setting">
+                                            <span class="material-icons">settings</span>
+                                        </button>
+                                    </div>
+                                </nav>
+                            </header>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-5 col-lg-4 px-0">
+                            <div class="list-group border-top border-bottom list-group-flush" id="maillist">
+                                <div class="list-group-item">
+                                    <div class="media">
+                                        <figure class="avatar avatar-40 rounded align-self-start mr-3">
+                                            <label class="checkbox-user-check active">
+                                                <input type="checkbox">
+                                                <i class="material-icons">check</i>
+                                            </label>
+                                            <img src="assets/img/user3.jpg" alt="Generic placeholder image">
+                                        </figure>
+                                        <div class="media-body">
+                                            <h6 class="time-title mb-1">John Smith<small class="float-right text-mute-high">2/8/2018</small></h6>
+                                            <p class="text-mute">This is awesome product and, I am very happy with delivery &amp; product</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="list-group-item">
+                                    <div class="media">
+                                        <figure class="avatar avatar-40 rounded align-self-start mr-3">
+                                            <label class="checkbox-user-check">
+                                                <input type="checkbox">
+                                                <i class="material-icons">check</i>
+                                            </label>
+                                            <img src="assets/img/user2.jpg" alt="Generic placeholder image">
+                                        </figure>
+                                        <div class="media-body">
+                                            <h6 class="time-title mb-1">Astha Anwar<small class="float-right text-mute-high">28/7/2018</small></h6>
+                                            <p class="text-mute">This is awesome product and, I am very happy with delivery &amp; product</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="list-group-item">
+                                    <div class="media">
+                                        <figure class="avatar avatar-40 rounded align-self-start mr-3">
+                                            <label class="checkbox-user-check">
+                                                <input type="checkbox">
+                                                <i class="material-icons">check</i>
+                                            </label>
+                                            <img src="assets/img/user1.jpg" alt="Generic placeholder image">
+                                        </figure>
+                                        <div class="media-body">
+                                            <h6 class="time-title mb-1">Tommy Boyoth<small class="float-right text-mute-high">25/7/2018</small></h6>
+                                            <p class="text-mute">This is awesome product and, I am very happy with delivery &amp; product</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="list-group-item">
+                                    <div class="media">
+                                        <figure class="avatar avatar-40 rounded align-self-start mr-3">
+                                            <label class="checkbox-user-check">
+                                                <input type="checkbox">
+                                                <i class="material-icons">check</i>
+                                            </label>
+                                            <img src="assets/img/user3.jpg" alt="Generic placeholder image">
+                                        </figure>
+                                        <div class="media-body">
+                                            <h6 class="time-title mb-1">John Smith<small class="float-right text-mute-high">2/8/2018</small></h6>
+                                            <p class="text-mute">This is awesome product and, I am very happy with delivery &amp; product</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="list-group-item">
+                                    <div class="media">
+                                        <figure class="avatar avatar-40 rounded align-self-start mr-3">
+                                            <label class="checkbox-user-check">
+                                                <input type="checkbox">
+                                                <i class="material-icons">check</i>
+                                            </label>
+                                            <img src="assets/img/user4.jpg" alt="Generic placeholder image">
+                                        </figure>
+                                        <div class="media-body">
+                                            <h6 class="time-title mb-1">Astha Anwar<small class="float-right text-mute-high">28/7/2018</small></h6>
+                                            <p class="text-mute">This is awesome product and, I am very happy with delivery &amp; product</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="list-group-item">
+                                    <div class="media">
+                                        <figure class="avatar avatar-40 rounded align-self-start mr-3">
+                                            <label class="checkbox-user-check">
+                                                <input type="checkbox">
+                                                <i class="material-icons">check</i>
+                                            </label>
+                                            <img src="assets/img/user3.jpg" alt="Generic placeholder image">
+                                        </figure>
+                                        <div class="media-body">
+                                            <h6 class="time-title mb-1">John Smith<small class="float-right text-mute-high">2/8/2018</small></h6>
+                                            <p class="text-mute">This is awesome product and, I am very happy with delivery &amp; product</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="list-group-item">
+                                    <div class="media">
+                                        <figure class="avatar avatar-40 rounded align-self-start mr-3">
+                                            <label class="checkbox-user-check">
+                                                <input type="checkbox">
+                                                <i class="material-icons">check</i>
+                                            </label>
+                                            <img src="assets/img/user4.jpg" alt="Generic placeholder image">
+                                        </figure>
+                                        <div class="media-body">
+                                            <h6 class="time-title mb-1">Astha Anwar<small class="float-right text-mute-high">28/7/2018</small></h6>
+                                            <p class="text-mute">This is awesome product and, I am very happy with delivery &amp; product</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="list-group-item">
+                                    <div class="media">
+                                        <figure class="avatar avatar-40 rounded align-self-start mr-3">
+                                            <label class="checkbox-user-check">
+                                                <input type="checkbox">
+                                                <i class="material-icons">check</i>
+                                            </label>
+                                            <img src="assets/img/user3.jpg" alt="Generic placeholder image">
+                                        </figure>
+                                        <div class="media-body">
+                                            <h6 class="time-title mb-1">John Smith<small class="float-right text-mute-high">2/8/2018</small></h6>
+                                            <p class="text-mute">This is awesome product and, I am very happy with delivery &amp; product</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="list-group-item">
+                                    <div class="media">
+                                        <figure class="avatar avatar-40 rounded align-self-start mr-3">
+                                            <label class="checkbox-user-check">
+                                                <input type="checkbox">
+                                                <i class="material-icons">check</i>
+                                            </label>
+                                            <img src="assets/img/user4.jpg" alt="Generic placeholder image">
+                                        </figure>
+                                        <div class="media-body">
+                                            <h6 class="time-title mb-1">Astha Anwar<small class="float-right text-mute-high">28/7/2018</small></h6>
+                                            <p class="text-mute">This is awesome product and, I am very happy with delivery &amp; product</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="list-group-item">
+                                    <div class="media">
+                                        <figure class="avatar avatar-40 rounded align-self-start mr-3">
+                                            <label class="checkbox-user-check">
+                                                <input type="checkbox">
+                                                <i class="material-icons">check</i>
+                                            </label>
+                                            <img src="assets/img/user5.jpg" alt="Generic placeholder image">
+                                        </figure>
+                                        <div class="media-body">
+                                            <h6 class="time-title mb-1">Tommy Boyoth<small class="float-right text-mute-high">25/7/2018</small></h6>
+                                            <p class="text-mute">This is awesome product and, I am very happy with delivery &amp; product</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="list-group-item">
+                                    <div class="media">
+                                        <figure class="avatar avatar-40 rounded align-self-start mr-3">
+                                            <label class="checkbox-user-check">
+                                                <input type="checkbox">
+                                                <i class="material-icons">check</i>
+                                            </label>
+                                            <img src="assets/img/user3.jpg" alt="Generic placeholder image">
+                                        </figure>
+                                        <div class="media-body">
+                                            <h6 class="time-title mb-1">John Smith<small class="float-right text-mute-high">2/8/2018</small></h6>
+                                            <p class="text-mute">This is awesome product and, I am very happy with delivery &amp; product</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="list-group-item">
+                                    <div class="media">
+                                        <figure class="avatar avatar-40 rounded align-self-start mr-3">
+                                            <label class="checkbox-user-check">
+                                                <input type="checkbox">
+                                                <i class="material-icons">check</i>
+                                            </label>
+                                            <img src="assets/img/user1.jpg" alt="Generic placeholder image">
+                                        </figure>
+                                        <div class="media-body">
+                                            <h6 class="time-title mb-1">Astha Anwar<small class="float-right text-mute-high">28/7/2018</small></h6>
+                                            <p class="text-mute">This is awesome product and, I am very happy with delivery &amp; product</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="list-group-item">
+                                    <div class="media">
+                                        <figure class="avatar avatar-40 rounded align-self-start mr-3">
+                                            <label class="checkbox-user-check">
+                                                <input type="checkbox">
+                                                <i class="material-icons">check</i>
+                                            </label>
+                                            <img src="assets/img/user1.jpg" alt="Generic placeholder image">
+                                        </figure>
+                                        <div class="media-body">
+                                            <h6 class="time-title mb-1">Tommy Boyoth<small class="float-right text-mute-high">25/7/2018</small></h6>
+                                            <p class="text-mute">This is awesome product and, I am very happy with delivery &amp; product</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-7 col-lg-8 bg-white" id="mailcontent">
+                            <div class="media w-100 my-4">
+                                <figure class="avatar avatar-50 rounded align-self-start mr-3">
+                                    <label class="checkbox-user-check">
+                                        <input type="checkbox">
+                                        <i class="material-icons">check</i>
+                                    </label>
+                                    <img src="assets/img/user1.jpg" alt="Generic placeholder image">
+                                </figure>
+                                <div class="media-body">
+                                    <h5 class="time-title mb-0">John Smith<small class="float-right text-muted">2/8/2018 | 1:00 am</small></h5>
+                                    <p class="mb-0 text-mute-high">johnsmith@example.com</p>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-12 col-lg-10 col-xl-8 mx-auto">
+                                    <p>Hello John,
+                                        <br>
+                                        <br>
+                                        <i>"Greetings from Dedash"</i>
+                                        <br>
+                                        <br>This is awesome product and, I am very happy with delivery &amp; product is awesome product and, I am very happy with delivery &amp; product packaging Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend Lorem
+                                        <br> ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend
+                                        <br>
+
+                                    </p>
+                                    <br>
+                                    <blockquote class="blockquote text-center">
+                                        <p class="mb-0">This is awesome product and<br> I am very happy with delivery &amp; product packaging.</p>
+                                        <footer class="blockquote-footer mt-3">Dedash, <cite title="Source Title">Auther Dedash</cite></footer>
+                                    </blockquote>
+                                    <br>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend
+                                        <br>
+                                        <br> Thanks,
+                                        <br>
+                                        <b>Lucky Sans</b>
+                                    </p>
+                                    <img src="assets/img/logo.png" alt="">
+                                    <br>
+                                    <hr>
+                                    <div class="page-sub-title-small mb-2">Attachments</div>
+                                    <div class="row">
+                                        <div class="col-12 col-md-6 col-lg-4 col-xl-auto">
+                                            <div class="card mb-4 bg-light-danger border border-danger no-shadow">
+                                                <div class="card-body p-2">
+                                                    <div class="media">
+                                                        <div class="media-body">
+                                                            <p class="mb-0">Document.pdf</p>
+                                                            <h6 class="mb-0">21.0 mb</h6>
+                                                        </div>
+                                                        <a href="javascript:void(0)" class="icons icon-rounded icon-40 bg-danger ml-2">
+                                                            <i class="material-icons text-white">cloud_download</i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6 col-lg-4 col-xl-auto">
+                                            <div class="card mb-4 bg-light-warning border border-warning no-shadow">
+                                                <div class="card-body p-2">
+                                                    <div class="media">
+                                                        <div class="media-body">
+                                                            <p class="mb-0">Document.pdf</p>
+                                                            <h6 class="mb-0">21.0 mb</h6>
+                                                        </div>
+                                                        <a href="javascript:void(0)" class="icons icon-rounded icon-40 bg-warning ml-2">
+                                                            <i class="material-icons text-white">cloud_download</i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6 col-lg-4 col-xl-auto">
+                                            <div class="card mb-4 bg-light-success border border-success no-shadow">
+                                                <div class="card-body p-2">
+                                                    <div class="media">
+                                                        <div class="media-body">
+                                                            <p class="mb-0">Document.pdf</p>
+                                                            <h6 class="mb-0">21.0 mb</h6>
+                                                        </div>
+                                                        <a href="javascript:void(0)" class="icons icon-rounded icon-40 bg-success ml-2">
+                                                            <i class="material-icons text-white">cloud_download</i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6 col-lg-4 col-xl-auto">
+                                            <div class="card mb-4 bg-light-primary border border-primary no-shadow">
+                                                <div class="card-body p-2">
+                                                    <div class="media">
+                                                        <div class="media-body">
+                                                            <p class="mb-0">Document.pdf</p>
+                                                            <h6 class="mb-0">21.0 mb</h6>
+                                                        </div>
+                                                        <a href="javascript:void(0)" class="icons icon-rounded icon-40 bg-primary ml-2">
+                                                            <i class="material-icons text-white">cloud_download</i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="page-sub-title-small mb-2">Quick Reply</div>
+                                    <div class="card mb-4">
+                                        <div class="card-body p-0">
+                                            <textarea class="form-control border-0" rows="5" id="editor"></textarea>
+                                        </div>
+                                        <div class="card-footer border-top">
+                                            <button class="btn btn-primary"> Send </button>
+                                            <button class="btn btn-secondary ml-2"> Discard </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </main>
+
+            <footer class="footer mt-auto">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <p>Copyright 2020 : On The Way</p>
+                        </div>
+                    </div>
+
+                </div>
+            </footer>
+        </div>
+
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js//popper.min.js"></script>
+    <script src="assets/vendor/bootstrap-4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- cookie css -->
+    <script src="assets/vendor/cookie/jquery.cookie.js"></script>
+
+    <!-- custom scrollbar -->
+    <script src="assets/vendor/malihu-custom-scrollbar-plugin-master/jquery.mCustomScrollbar.concat.min.js"></script>
+
+    <!-- ck editor -->
+    <script src="assets/vendor/ckeditor/ckeditor.js"></script>
+
+    <!-- Template main js -->
+    <script src="assets/js/main.js"></script>
+
+    <!-- color picker and Layout selector main js -->
+    <script src="assets/js/layout-colorpicker.js"></script>
+
+    <!-- page specific script -->
+    <script>
+        'user strict'
+        $(document).ready(function() {
+            ClassicEditor
+                .create(document.querySelector('#editor'))
+                .catch(error => {
+                    console.error(error);
+                });
+
+
+            $('#maillist').find('input[type="checkbox"]').on('click', function() {
+                if ($(this).is(':checked') === true) {
+                    $(this).parent().addClass('active');
+                } else {
+                    $(this).parent().removeClass('active');
+                }
+            });
+            $('#customCheck1').on('click', function() {
+                if ($(this).is(':checked') === true) {
+
+                    $('#maillist').find('input[type="checkbox"]').attr('checked', true).parent().addClass('active');
+                } else {
+                    $('#maillist').find('input[type="checkbox"]').attr('checked', false).parent().removeClass('active');
+                }
+            });
+            
+            $('#maillist').height($(window).height() -170);
+            $('#mailcontent').height($(window).height() - 170);
+            $(window).on('resize', function() {
+                $('#maillist').height($(window).height() - ($('#mailtopbar').outerHeight() + $('footer').outerHeight() + $('.main-header').outerHeight()) - 25);
+                $('#mailcontent').height($(window).height() - ($('#mailtopbar').outerHeight() + $('footer').outerHeight() + $('.main-header').outerHeight()) - 25);
+            })
+        });
+
+    </script>
+
+</body>
+
+</html>
