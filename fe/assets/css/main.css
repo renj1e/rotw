@@ -106,6 +106,7 @@ section{
   padding: 120px 0;
   position: relative;
   width: 100%;
+  z-index: 0;
 }
 
 .meals {
@@ -126,6 +127,7 @@ section{
   width: 100%;
   background-color: #fff;
   padding: 15px 10px;
+  overflow: auto;
 }
 .menu-sorter>li{
   position: relative;
@@ -693,23 +695,75 @@ header {
   float: right;
   margin-top: 11px;
 }
-.social1 > a {
+.social1  a {
   font-size: 18px;
   color: #fff;
   float: left;
 }
-.social1 > a > span.cart {
+.social1  a > span.cart {
   background-color: #ea1b25;
   padding: 0 5px;
   border-radius: 5px;
   font-size: 15px;
   font-weight: 600;
 }
-.social1 > a:hover > span.cart,
-.social1 > a:focus > span.cart  {
+.social1  a:hover > span.cart,
+.social1  a:focus > span.cart  {
   color: #fff;
 }
-.social1 > a + a {margin-left: 15px;}
+.social1  a + a {margin-left: 15px;}
+.social1 .dropdown .dropdown-menu {
+  top: 33px;
+  width: 315px;
+}
+.social1 .dropdown .dropdown-menu .order-inner.gradient-brd {
+  border: 0;
+}
+.social1 .dropdown .dropdown-menu .order-list-wrapper > ul {
+  padding: 10px 28px 10px 23px;
+}
+.social1 .dropdown .dropdown-menu .order-inner,
+.social1 .dropdown .dropdown-menu .order-list-inner {
+  margin-bottom: 0;
+}
+.social1 .dropdown .dropdown-menu .order-method {
+  bottom: -84px;
+}
+.social1 .dropdown .dropdown-menu .order-list-inner {
+  height: 100%;
+  overflow: auto;
+  max-height: 300px;
+}
+.social1 .dropdown .dropdown-menu .order-list-inner > li {
+  padding-left: 5px;
+}
+.social1 .dropdown .dropdown-menu .order-list-inner span.remove-from-cart {
+  position: absolute;
+  right: -20px;
+  top: -5px;
+  border: 1px solid #ea1b25;
+  padding: 1px 5px;
+  border-radius: 5px;
+  z-index: 3;
+  color: #ea1b25;
+}
+.social1 .dropdown .dropdown-menu .order-list-inner span.remove-from-cart:hover {
+  border: 1px solid #c8c8c8;
+  color: #c8c8c8;
+  cursor: pointer;
+}
+.social1 .dropdown .dropdown-menu  .order-method > li:last-child {
+  font-size: 22px;
+}
+.social1.responsive {
+  cursor: pointer;
+  line-height: 30px;
+  width: 60px;
+  text-align: center;
+  font-size: 14px;
+  margin: 22px 0;
+  float: left;
+}
 .logo-menu-sec {
   float: left;
   width: 100%;
@@ -995,11 +1049,11 @@ header.sticky nav > div > ul > li span {font-size: 11px;}
   padding: 0;
   margin: 0;
 }
-.responsive-menu .social1 > a {
+.responsive-menu .social1  a {
   color: #c9c9c9;
   font-size: 13px;
 }
-.responsive-menu .social1 > a + a {margin-left: 10px;}
+.responsive-menu .social1  a + a {margin-left: 10px;}
 .responsive-menu .social1 {
   margin: 0 0 0 25px;
   float: left;

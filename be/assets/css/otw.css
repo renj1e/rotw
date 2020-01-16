@@ -26,6 +26,42 @@
   right: 5px!important;
 }
 
+div.dataTables_wrapper div.dataTables_length select {
+  -webkit-appearance: none;
+}
+.ck.ck-editor__editable_inline>:first-child {
+  margin-top: var(--ck-spacing-large)!important;
+}
+.ck.ck-editor__editable_inline>p {
+  margin: 0!important;
+}
+.dz-preview {
+  width: calc(95%/3);
+  display: inline-block;
+  border: 1px solid #d2d6e0;
+  padding: 5px;
+  margin: 3px;
+}
+.dz-success-mark,
+.dz-error-mark {
+  display: none;
+  width: calc(80%/2);
+  /*display: inline-block;*/
+}
+.dz-success-mark svg,
+.dz-error-mark svg {
+  width: 30px;
+  height: 30px;
+}
+.dz-error-message {
+  /*display: none;*/
+}
+.dz-preview .dz-filename {
+  white-space: nowrap;
+  width: inherit;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 p i,
 h1 i,
 h2 i,
@@ -1382,7 +1418,7 @@ table.table-dark td {
   height: calc(1.5em + .3rem + 2px);
   padding: .10rem .5rem;
   font-size: .875rem;
-  line-height: 0.8;
+  line-height: 1;
 }
 
 .form-control.form-control-lg {
@@ -1545,21 +1581,31 @@ table.table-dark td {
 
 .custom-dropzone {
   min-height: 150px;
-  border: 2px dashed #7979ff;
+  border: 2px dashed #ffbb02;
   background: #f0f2f6;
   padding: 20px 20px;
+}
+.custom-dropzone:hover {
+  cursor: pointer;
 }
 
 button.close {
   padding: 0;
   background-color: rgba(255, 255, 255, 0.7);
-  border-radius: 10px;
+  border-radius: 50%;
   appearance: none;
-  border: 0;
-  width: 20px;
-  height: 20px;
+  /*width: 20px;
+  height: 20px;*/
   font-size: 1.2rem;
-  border: 1px solid rgba(0, 0, 0, 0.6);
+  /*border: 1px solid rgba(0, 0, 0, 0.6);*/
+  padding: 6px 10px!important;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #6c757d;
+  opacity: 1;
+  color: #fff;
+  border: 1px solid #ffffff;
 }
 
 .list-group-item {
@@ -2089,6 +2135,11 @@ button.close {
 
 .sidebar .navbar-brand {
   padding: 18px 15px;
+}
+
+.sidebar .navbar-brand h4 span,
+.sidebar .navbar-brand p small {
+  color: #bbbbbb;
 }
 
 .compact .navbar-brand {

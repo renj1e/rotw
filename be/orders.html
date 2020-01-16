@@ -94,7 +94,7 @@
                     <a class="nav-link" href="riders.html"><i class="material-icons icon">directions_bike</i><span class="menu-text">Riders</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="customers.html"><i class="material-icons icon">group</i><span class="menu-text">Customers</span></a>
+                    <a class="nav-link" href="customers.html"><i class="material-icons icon">group</i><span class="menu-text">Customers</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="products.html"><i class="material-icons icon">fastfood</i><span class="menu-text">Products</span></a>
@@ -122,7 +122,7 @@
                             <div class="btn-group shadow-sm  d-none d-md-inline-flex" role="group" aria-label="Basic example">
                                 <a href="index.html" class="btn text-uppercase px-3 btn-sm btn-default">Dashboard</a>
                                 <a href="chat.html" class="btn text-uppercase px-3 btn-sm btn-default">Chat <span class="badge badge-danger">5</span></a>
-                                <a href="orders.html" class="btn text-uppercase px-3 btn-sm btn-default">Track Orders <span class="badge badge-danger">15</span></a>
+                                <a href="orders.html" class="btn text-uppercase px-3 btn-sm btn-default active">Track Orders <span class="badge badge-danger">15</span></a>
                             </div>
                         </div>
                         <div class="col-auto text-right align-self-center">
@@ -203,8 +203,8 @@
                         <div class="container py-4">
                             <div class="row">
                                 <div class="col">
-                                    <h5 class="font-weight-normal template-primary">Customers</h5>
-                                    <p class="text-secondary mb-0">All registered customers</p>
+                                    <h5 class="font-weight-normal template-primary">Track Orders</h5>
+                                    <p class="text-secondary mb-0">All Orders</p>
                                 </div>
                             </div>
                         </div>
@@ -217,204 +217,163 @@
                                     <table class="table table-striped border" id="dataTables-example">
                                         <thead>
                                             <tr>
-                                                <th>Name</th>
-                                                <th>Contact</th>
-                                                <th>Total Delivered orders</th>
-                                                <th>Last Visit</th>
+                                                <th>ID</th>
+                                                <th>Destination</th>
+                                                <th>Rider</th>
+                                                <th>Total Items</th>
+                                                <th>Status / ETA</th>
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <tr class="odd">
+                                            <tr class="odd">             
+                                                <td class="center">1234567890</td>       
                                                 <td>
-                                                    <figure class="rounded-circle avatar avatar-50 mr-2"><img src="assets/img/user1.jpg" alt=""></figure>Joe Berry
-                                                </td>
-                                                <td>
+                                                    <figure class="avatar avatar-30 mr-2"><img src="assets/img/user1.jpg" alt=""></figure>Joe Berry
                                                     <p class="mb-0"><small>+63 000 000 0000</small></p>
                                                     <p class="mb-0"><small>Poblacion, Alaminos City, Pangasinan</small></p>
-                                                    <p class="mb-0">
-                                                        <a href="" class=" btn btn-link btn-sm border">
-                                                            <img class="border-0 vm" src="assets/img/facebook.png" alt="">
-                                                        </a>
-                                                    </p>
-                                                </td>                                                
-                                                <td class="center">40</td>
-                                                <td class="center"><span class="btn btn-outline-success btn-sm">Dec 30, 2019</span></td>
+                                                </td>
+                                                <td>
+                                                    <figure class="avatar avatar-30 mr-2"><img src="assets/img/user4.jpg" alt=""></figure>Ryan Bangs
+                                                    <p class="mb-0"><small>+63 000 000 0000</small></p>
+                                                    <p class="mb-0"><small>Poblacion, Alaminos City, Pangasinan</small></p>
+                                                </td>                                          
+                                                <td class="center">18</td>                                
+                                                <td class="center"><span class="btn btn-outline-success btn-sm">Purchasing orders</span></td>
                                             </tr>
                                             <tr class="even ">
+                                                <td class="center">2234567890</td>       
                                                 <td>
-                                                    <figure class="rounded-circle avatar avatar-50 mr-2"><img src="assets/img/user2.jpg" alt=""></figure>Jhong Hillary
-                                                </td>
-                                                <td>
+                                                    <figure class="avatar avatar-30 mr-2"><img src="assets/img/user1.jpg" alt=""></figure>Kelly Berry
                                                     <p class="mb-0"><small>+63 000 000 0000</small></p>
                                                     <p class="mb-0"><small>Poblacion, Alaminos City, Pangasinan</small></p>
-                                                    <p class="mb-0">
-                                                        <a href="" class=" btn btn-link btn-sm border">
-                                                            <img class="border-0 vm" src="assets/img/facebook.png" alt="">
-                                                        </a>
-                                                    </p>
-                                                </td>                                                
-                                                <td class="center">18</td>
-                                                <td class="center"><span class="btn btn-outline-success btn-sm">Dec 30, 2019</span></td>
+                                                </td>
+                                                <td>
+                                                    <figure class="avatar avatar-30 mr-2"><img src="assets/img/user4.jpg" alt=""></figure>Ryan Bangs
+                                                    <p class="mb-0"><small>+63 000 000 0000</small></p>
+                                                    <p class="mb-0"><small>Poblacion, Alaminos City, Pangasinan</small></p>
+                                                </td>                                          
+                                                <td class="center">8</td>                                
+                                                <td class="center"><span class="btn btn-outline-success btn-sm">Purchasing orders</span></td>
                                             </tr>
-                                            <tr class="odd">
+                                            <tr class="odd">             
+                                                <td class="center">1234567890</td>       
                                                 <td>
-                                                    <figure class="rounded-circle avatar avatar-50 mr-2"><img src="assets/img/user3.jpg" alt=""></figure>Astha Amigo
-                                                </td>
-                                                <td>
+                                                    <figure class="avatar avatar-30 mr-2"><img src="assets/img/user1.jpg" alt=""></figure>Joe Berry
                                                     <p class="mb-0"><small>+63 000 000 0000</small></p>
                                                     <p class="mb-0"><small>Poblacion, Alaminos City, Pangasinan</small></p>
-                                                    <p class="mb-0">
-                                                        <a href="" class=" btn btn-link btn-sm border">
-                                                            <img class="border-0 vm" src="assets/img/facebook.png" alt="">
-                                                        </a>
-                                                    </p>
-                                                </td>                                                
-                                                <td class="center">10</td>
-                                                <td class="center"><span class="btn btn-outline-success btn-sm">Dec 30, 2019</span></td>                                                
+                                                </td>
+                                                <td>
+                                                    <figure class="avatar avatar-30 mr-2"><img src="assets/img/user4.jpg" alt=""></figure>Ryan Bangs
+                                                    <p class="mb-0"><small>+63 000 000 0000</small></p>
+                                                    <p class="mb-0"><small>Poblacion, Alaminos City, Pangasinan</small></p>
+                                                </td>                                          
+                                                <td class="center">18</td>                                
+                                                <td class="center"><span class="btn btn-outline-success btn-sm">Purchasing orders</span></td>
                                             </tr>
                                             <tr class="even ">
+                                                <td class="center">2234567890</td>       
                                                 <td>
-                                                    <figure class="rounded-circle avatar avatar-50 mr-2"><img src="assets/img/user1.jpg" alt=""></figure>Lucky Manzano
-                                                </td>
-                                                <td>
+                                                    <figure class="avatar avatar-30 mr-2"><img src="assets/img/user1.jpg" alt=""></figure>Kelly Berry
                                                     <p class="mb-0"><small>+63 000 000 0000</small></p>
                                                     <p class="mb-0"><small>Poblacion, Alaminos City, Pangasinan</small></p>
-                                                    <p class="mb-0">
-                                                        <a href="" class=" btn btn-link btn-sm border">
-                                                            <img class="border-0 vm" src="assets/img/facebook.png" alt="">
-                                                        </a>
-                                                    </p>
-                                                </td>                                                
-                                                <td class="center">19</td>
-                                                <td class="center"><span class="btn btn-outline-success btn-sm">Dec 30, 2019</span></td>                                                
+                                                </td>
+                                                <td>
+                                                    <figure class="avatar avatar-30 mr-2"><img src="assets/img/user4.jpg" alt=""></figure>Ryan Bangs
+                                                    <p class="mb-0"><small>+63 000 000 0000</small></p>
+                                                    <p class="mb-0"><small>Poblacion, Alaminos City, Pangasinan</small></p>
+                                                </td>                                          
+                                                <td class="center">8</td>                                
+                                                <td class="center"><span class="btn btn-outline-success btn-sm">Purchasing orders</span></td>
                                             </tr>
-                                            <tr class="odd">
+                                            <tr class="odd">             
+                                                <td class="center">1234567890</td>       
                                                 <td>
-                                                    <figure class="rounded-circle avatar avatar-50 mr-2"><img src="assets/img/user3.jpg" alt=""></figure>John Doe
-                                                </td>
-                                                <td>
+                                                    <figure class="avatar avatar-30 mr-2"><img src="assets/img/user1.jpg" alt=""></figure>Joe Berry
                                                     <p class="mb-0"><small>+63 000 000 0000</small></p>
                                                     <p class="mb-0"><small>Poblacion, Alaminos City, Pangasinan</small></p>
-                                                    <p class="mb-0">
-                                                        <a href="" class=" btn btn-link btn-sm border">
-                                                            <img class="border-0 vm" src="assets/img/facebook.png" alt="">
-                                                        </a>
-                                                    </p>
-                                                </td>                                                
-                                                <td class="center">40</td>
-                                                <td class="center"><span class="btn btn-outline-success btn-sm">Dec 30, 2019</span></td>                                                
+                                                </td>
+                                                <td>
+                                                    <figure class="avatar avatar-30 mr-2"><img src="assets/img/user4.jpg" alt=""></figure>Ryan Bangs
+                                                    <p class="mb-0"><small>+63 000 000 0000</small></p>
+                                                    <p class="mb-0"><small>Poblacion, Alaminos City, Pangasinan</small></p>
+                                                </td>                                          
+                                                <td class="center">18</td>                                
+                                                <td class="center"><span class="btn btn-outline-success btn-sm">Purchasing orders</span></td>
                                             </tr>
                                             <tr class="even ">
+                                                <td class="center">2234567890</td>       
                                                 <td>
-                                                    <figure class="rounded-circle avatar avatar-50 mr-2"><img src="assets/img/user1.jpg" alt=""></figure>Jhong Hillary
-                                                </td>
-                                                <td>
+                                                    <figure class="avatar avatar-30 mr-2"><img src="assets/img/user1.jpg" alt=""></figure>Kelly Berry
                                                     <p class="mb-0"><small>+63 000 000 0000</small></p>
                                                     <p class="mb-0"><small>Poblacion, Alaminos City, Pangasinan</small></p>
-                                                    <p class="mb-0">
-                                                        <a href="" class=" btn btn-link btn-sm border">
-                                                            <img class="border-0 vm" src="assets/img/facebook.png" alt="">
-                                                        </a>
-                                                    </p>
-                                                </td>                                                
-                                                <td class="center">18</td>
-                                                <td class="center"><span class="btn btn-outline-danger btn-sm">July 30, 2019</span></td>                                                
+                                                </td>
+                                                <td>
+                                                    <figure class="avatar avatar-30 mr-2"><img src="assets/img/user4.jpg" alt=""></figure>Ryan Bangs
+                                                    <p class="mb-0"><small>+63 000 000 0000</small></p>
+                                                    <p class="mb-0"><small>Poblacion, Alaminos City, Pangasinan</small></p>
+                                                </td>                                          
+                                                <td class="center">8</td>                                
+                                                <td class="center"><span class="btn btn-outline-success btn-sm">Purchasing orders</span></td>
                                             </tr>
-                                            <tr class="odd">
+                                            <tr class="odd">             
+                                                <td class="center">1234567890</td>       
                                                 <td>
-                                                    <figure class="rounded-circle avatar avatar-50 mr-2"><img src="assets/img/user3.jpg" alt=""></figure>Astha Amigo
-                                                </td>
-                                                <td>
+                                                    <figure class="avatar avatar-30 mr-2"><img src="assets/img/user1.jpg" alt=""></figure>Joe Berry
                                                     <p class="mb-0"><small>+63 000 000 0000</small></p>
                                                     <p class="mb-0"><small>Poblacion, Alaminos City, Pangasinan</small></p>
-                                                    <p class="mb-0">
-                                                        <a href="" class=" btn btn-link btn-sm border">
-                                                            <img class="border-0 vm" src="assets/img/facebook.png" alt="">
-                                                        </a>
-                                                    </p>
-                                                </td>                                                
-                                                <td class="center">17</td>
-                                                <td class="center"><span class="btn btn-outline-danger btn-sm">July 30, 2019</span></td>                                                
+                                                </td>
+                                                <td>
+                                                    <figure class="avatar avatar-30 mr-2"><img src="assets/img/user4.jpg" alt=""></figure>Ryan Bangs
+                                                    <p class="mb-0"><small>+63 000 000 0000</small></p>
+                                                    <p class="mb-0"><small>Poblacion, Alaminos City, Pangasinan</small></p>
+                                                </td>                                          
+                                                <td class="center">18</td>                                
+                                                <td class="center"><span class="btn btn-outline-success btn-sm">Purchasing orders</span></td>
                                             </tr>
                                             <tr class="even ">
+                                                <td class="center">2234567890</td>       
                                                 <td>
-                                                    <figure class="rounded-circle avatar avatar-50 mr-2"><img src="assets/img/user2.jpg" alt=""></figure>John Doe
-                                                </td>
-                                                <td>
+                                                    <figure class="avatar avatar-30 mr-2"><img src="assets/img/user1.jpg" alt=""></figure>Kelly Berry
                                                     <p class="mb-0"><small>+63 000 000 0000</small></p>
                                                     <p class="mb-0"><small>Poblacion, Alaminos City, Pangasinan</small></p>
-                                                    <p class="mb-0">
-                                                        <a href="" class=" btn btn-link btn-sm border">
-                                                            <img class="border-0 vm" src="assets/img/facebook.png" alt="">
-                                                        </a>
-                                                    </p>
-                                                </td>                                                
-                                                <td class="center">50</td>
-                                                <td class="center"><span class="btn btn-outline-success btn-sm">Dec 30, 2019</span></td>
+                                                </td>
+                                                <td>
+                                                    <figure class="avatar avatar-30 mr-2"><img src="assets/img/user4.jpg" alt=""></figure>Ryan Bangs
+                                                    <p class="mb-0"><small>+63 000 000 0000</small></p>
+                                                    <p class="mb-0"><small>Poblacion, Alaminos City, Pangasinan</small></p>
+                                                </td>                                          
+                                                <td class="center">8</td>                                
+                                                <td class="center"><span class="btn btn-outline-success btn-sm">Purchasing orders</span></td>
                                             </tr>
-                                            <tr class="odd">
+                                            <tr class="odd">             
+                                                <td class="center">1234567890</td>       
                                                 <td>
-                                                    <figure class="rounded-circle avatar avatar-50 mr-2"><img src="assets/img/user2.jpg" alt=""></figure>Jhong Hillary
-                                                </td>
-                                                <td>
+                                                    <figure class="avatar avatar-30 mr-2"><img src="assets/img/user1.jpg" alt=""></figure>Joe Berry
                                                     <p class="mb-0"><small>+63 000 000 0000</small></p>
                                                     <p class="mb-0"><small>Poblacion, Alaminos City, Pangasinan</small></p>
-                                                    <p class="mb-0">
-                                                        <a href="" class=" btn btn-link btn-sm border">
-                                                            <img class="border-0 vm" src="assets/img/facebook.png" alt="">
-                                                        </a>
-                                                    </p>
-                                                </td>                                                
-                                                <td class="center">20</td>
-                                                <td class="center"><span class="btn btn-outline-danger btn-sm">July 30, 2019</span></td>                                                
+                                                </td>
+                                                <td>
+                                                    <figure class="avatar avatar-30 mr-2"><img src="assets/img/user4.jpg" alt=""></figure>Ryan Bangs
+                                                    <p class="mb-0"><small>+63 000 000 0000</small></p>
+                                                    <p class="mb-0"><small>Poblacion, Alaminos City, Pangasinan</small></p>
+                                                </td>                                          
+                                                <td class="center">18</td>                                
+                                                <td class="center"><span class="btn btn-outline-success btn-sm">Purchasing orders</span></td>
                                             </tr>
                                             <tr class="even ">
+                                                <td class="center">2234567890</td>       
                                                 <td>
-                                                    <figure class="rounded-circle avatar avatar-50 mr-2"><img src="assets/img/user2.jpg" alt=""></figure>Astha Amigo
-                                                </td>
-                                                <td>
+                                                    <figure class="avatar avatar-30 mr-2"><img src="assets/img/user1.jpg" alt=""></figure>Kelly Berry
                                                     <p class="mb-0"><small>+63 000 000 0000</small></p>
                                                     <p class="mb-0"><small>Poblacion, Alaminos City, Pangasinan</small></p>
-                                                    <p class="mb-0">
-                                                        <a href="" class=" btn btn-link btn-sm border">
-                                                            <img class="border-0 vm" src="assets/img/facebook.png" alt="">
-                                                        </a>
-                                                    </p>
-                                                </td>                                                
-                                                <td class="center">15</td>
-                                                <td class="center"><span class="btn btn-outline-success btn-sm">Dec 30, 2019</span></td>
-                                            </tr>
-                                            <tr class="odd">
-                                                <td>
-                                                    <figure class="rounded-circle avatar avatar-50 mr-2"><img src="assets/img/user1.jpg" alt=""></figure>Lucky Manzano
                                                 </td>
                                                 <td>
+                                                    <figure class="avatar avatar-30 mr-2"><img src="assets/img/user4.jpg" alt=""></figure>Ryan Bangs
                                                     <p class="mb-0"><small>+63 000 000 0000</small></p>
                                                     <p class="mb-0"><small>Poblacion, Alaminos City, Pangasinan</small></p>
-                                                    <p class="mb-0">
-                                                        <a href="" class=" btn btn-link btn-sm border">
-                                                            <img class="border-0 vm" src="assets/img/facebook.png" alt="">
-                                                        </a>
-                                                    </p>
-                                                </td>                                                
-                                                <td class="center">15</td>
-                                                <td class="center"><span class="btn btn-outline-danger btn-sm">July 30, 2019</span></td>                                                
-                                            </tr>
-                                            <tr class="even ">
-                                                <td>
-                                                    <figure class="rounded-circle avatar avatar-50 mr-2"><img src="assets/img/user1.jpg" alt=""></figure>John Doe
-                                                </td>
-                                                <td>
-                                                    <p class="mb-0"><small>+63 000 000 0000</small></p>
-                                                    <p class="mb-0"><small>Poblacion, Alaminos City, Pangasinan</small></p>
-                                                    <p class="mb-0">
-                                                        <a href="" class=" btn btn-link btn-sm border">
-                                                            <img class="border-0 vm" src="assets/img/facebook.png" alt="">
-                                                        </a>
-                                                    </p>
-                                                </td>                                                
-                                                <td class="center">50</td>
-                                                <td class="center"><span class="btn btn-outline-success btn-sm">Dec 30, 2019</span></td>
+                                                </td>                                          
+                                                <td class="center">8</td>                                
+                                                <td class="center"><span class="btn btn-outline-success btn-sm">Purchasing orders</span></td>
                                             </tr>
                                         </tbody>
                                     </table>

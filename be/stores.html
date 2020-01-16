@@ -122,6 +122,7 @@
                             <div class="btn-group shadow-sm  d-none d-md-inline-flex" role="group" aria-label="Basic example">
                                 <a href="index.html" class="btn text-uppercase px-3 btn-sm btn-default">Dashboard</a>
                                 <a href="chat.html" class="btn text-uppercase px-3 btn-sm btn-default">Chat <span class="badge badge-danger">5</span></a>
+                                <a href="orders.html" class="btn text-uppercase px-3 btn-sm btn-default">Track Orders <span class="badge badge-danger">15</span></a>
                             </div>
                         </div>
                         <div class="col-auto text-right align-self-center">
@@ -204,6 +205,89 @@
                                 <div class="col">
                                     <h5 class="font-weight-normal template-primary">Vendors</h5>
                                     <p class="text-secondary mb-0">All registered vendors</p>
+                                </div>
+                                <div class="col-auto align-self-center">
+                                    <button type="button" class="btn btn-primary mb-2 btn-success text-uppercase" data-toggle="modal" data-target="#exampleModal">
+                                        <i class="material-icons md-18 mr-1">add</i> vendor / store
+                                    </button>
+                                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-lg" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header gradient-pink">
+                                                    <h5 class="modal-title" id="exampleModalLabel">New Vendor / Store</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">×</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="row justify-content-center">
+                                                        <div class="col-md-10 mx-auto">
+                                                            <div class="form-group row">
+                                                                <div class="col-lg-12 col-md-12">
+                                                                    <label>Name</label>
+                                                                    <input type="text" class="form-control" placeholder="">
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <div class="col-lg-12 col-md-12">
+                                                                    <label>Business Address</label>                                
+                                                                    <div class="input-group mb-1">
+                                                                        <input type="text" class="form-control" placeholder="Street">
+                                                                        <input type="text" class="form-control" placeholder="City / Municipality">
+                                                                    </div>                                                  
+                                                                    <div class="input-group mb-1">
+                                                                        <input type="text" class="form-control" placeholder="Province">
+                                                                        <input type="text" class="form-control" placeholder="Country">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <div class="col-lg-12 col-md-12">
+                                                                    <label>Contact Info</label>
+                                                                    <span class="btn btn-success btn-sm float-right mb-2"><i class="material-icons icon-right icon">add</i></span>
+                                                                    <div class="input-group mb-1">
+                                                                        <div class="col-lg-4 col-md-4 p-0">
+                                                                            <select class="form-control">
+                                                                                <option>Select</option>
+                                                                                <optgroup label="Social Media" >
+                                                                                    <option>Facebook</option>
+                                                                                    <option>Instagram</option>
+                                                                                </optgroup>
+                                                                                <optgroup label="Other" >
+                                                                                    <option>Mobile</option>
+                                                                                    <option>Landline</option>
+                                                                                </optgroup>
+                                                                            </select>
+                                                                        </div>
+                                                                        <div class="col-lg-8 col-md-8 p-0">
+                                                                            <input type="text" class="form-control" placeholder="1234567890 or (https://www/facebook/com/urname)">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <div class="col-md-12">
+                                                                    <label>Display Photo</label>
+                                                                    <br>
+                                                                    <div class="custom-dropzone text-center align-items-center" id="my-dropzone">
+                                                                        <div class="dz-default dz-message" data-dz-message="">
+                                                                            <h3 class="mt-2"><i class="material-icons md-36">cloud_download</i></h3>
+                                                                            <p>Drop here or click here to upload</p>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                    <button type="button" class="btn btn-success">Save changes</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -538,6 +622,13 @@
     <script src="assets/vendor/DataTables-1.10.18/js/jquery.dataTables.min.js"></script>
     <script src="assets/vendor/DataTables-1.10.18/js/dataTables.bootstrap4.min.js"></script>
 
+    <!-- datepicker jquery file -->
+    <script src="assets/vendor/bootstrap-daterangepicker-master/moment.js"></script>
+    <script src="assets/vendor/bootstrap-daterangepicker-master/daterangepicker.js"></script>
+    
+    <!-- Dropzone jquery file -->
+    <script src="assets/vendor/dropzone-master/dropzone.js"></script>
+
     <!-- Footable jquery file -->
     <script src="assets/vendor/footable-bootstrap/js/footable.min.js"></script>
 
@@ -566,6 +657,18 @@
                     "position": "center"
                 }
             });
+            
+            $("#my-dropzone").dropzone({
+                url: "../",
+                acceptedFiles: "image/*",
+                addRemoveLinks: "dictRemoveFile",
+                dictResponseError: " ",
+            });
+            $('.datepicker').daterangepicker({
+                singleDatePicker: true,
+                showDropdowns: true,
+                minYear: 1901
+            }, function(start, end, label) {});
 
 
         });

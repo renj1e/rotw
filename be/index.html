@@ -122,6 +122,7 @@
                             <div class="btn-group shadow-sm  d-none d-md-inline-flex" role="group" aria-label="Basic example">
                                 <a href="#" class="btn text-uppercase px-3 btn-sm btn-default active">Dashboard</a>
                                 <a href="chat.html" class="btn text-uppercase px-3 btn-sm btn-default">Chat <span class="badge badge-danger">5</span></a>
+                                <a href="orders.html" class="btn text-uppercase px-3 btn-sm btn-default">Track Orders <span class="badge badge-danger">15</span></a>
                             </div>
                         </div>
                         <div class="col-auto text-right align-self-center">
@@ -291,7 +292,7 @@
                                                         <th>Rider name</th>
                                                         <th data-breakpoints="xs">Phone</th>
                                                         <th data-breakpoints="xs sm">Status</th>
-                                                        <th data-breakpoints="xs sm"></th>
+                                                        <th data-breakpoints="xs sm">Action</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
@@ -312,8 +313,7 @@
                                                             <small class="text-danger vm">Waiting...</small>
                                                         </td>
                                                         <td class="text-right footable-last-visible" style="display: table-cell;">
-                                                            <button class="btn btn-info px-1 btn-sm mr-1"><i class="material-icons md-18">edit</i></button>
-                                                            <button class="btn btn-success px-1 btn-sm"><i class="material-icons md-18">call</i></button>
+                                                            <button class="btn btn-info px-1 btn-sm mr-1"><i class="material-icons md-18">message</i></button>
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -330,11 +330,10 @@
                                                             <small class="text-mute vm">+000000000</small>
                                                         </td>
                                                         <td>
-                                                            <small class="text-green vm">Purchasing orders...</small>
+                                                            <small class="text-success vm">Purchasing orders...</small>
                                                         </td>
                                                         <td class="text-right footable-last-visible" style="display: table-cell;">
-                                                            <button class="btn btn-info px-1 btn-sm mr-1"><i class="material-icons md-18">edit</i></button>
-                                                            <button class="btn btn-success px-1 btn-sm"><i class="material-icons md-18">call</i></button>
+                                                            <button class="btn btn-info px-1 btn-sm mr-1"><i class="material-icons md-18">message</i></button>
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -351,11 +350,10 @@
                                                             <small class="text-mute vm">+000000000</small>
                                                         </td>
                                                         <td>
-                                                            <small class="text-info vm">10mins to detination</small>
+                                                            <small class="text-success vm">10mins to destination</small>
                                                         </td>
                                                         <td class="text-right footable-last-visible" style="display: table-cell;">
-                                                            <button class="btn btn-info px-1 btn-sm mr-1"><i class="material-icons md-18">edit</i></button>
-                                                            <button class="btn btn-success px-1 btn-sm"><i class="material-icons md-18">call</i></button>
+                                                            <button class="btn btn-info px-1 btn-sm mr-1"><i class="material-icons md-18">message</i></button>
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -372,11 +370,10 @@
                                                             <small class="text-mute vm">+000000000</small>
                                                         </td>
                                                         <td>
-                                                            <small class="text-info vm">3mins to detination</small>
+                                                            <small class="text-success vm">3mins to destination</small>
                                                         </td>
                                                         <td class="text-right footable-last-visible" style="display: table-cell;">
-                                                            <button class="btn btn-info px-1 btn-sm mr-1"><i class="material-icons md-18">edit</i></button>
-                                                            <button class="btn btn-success px-1 btn-sm"><i class="material-icons md-18">call</i></button>
+                                                            <button class="btn btn-info px-1 btn-sm mr-1"><i class="material-icons md-18">message</i></button>
                                                         </td>
                                                     </tr>
                                                 </tbody>
@@ -388,16 +385,16 @@
                                 <div class="col-12 col-md-6 col-lg-6">
                                     <div class="card border-0 shadow-sm mb-4">
                                         <div class="card-header">
-                                            <h6 class="card-title">Real-time Customer's Cart</h6>
+                                            <h6 class="card-title">Real-time Customer's Order</h6>
                                         </div>
                                         <div class="card-body p-0">
                                             <table class="table  footable" data-paging-limit="3">
                                                 <thead>
                                                     <tr>
                                                         <th>Customer name</th>
-                                                        <th data-breakpoints="xs">Cart</th>
+                                                        <th data-breakpoints="xs">Order</th>
                                                         <th data-breakpoints="xs sm">Last visit</th>
-                                                        <th data-breakpoints="xs sm"></th>
+                                                        <th data-breakpoints="xs sm">Action</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
@@ -413,12 +410,13 @@
                                                         </td>
                                                         <td>
                                                             <small class="text-mute vm">3 Items</small>
+                                                            <span class="badge badge-success">Confirmed Order</span>
                                                         </td>
                                                         <td>
                                                             <small class="text-mute vm">Today</small>
                                                         </td>
                                                         <td class="text-right footable-last-visible" style="display: table-cell;">
-                                                            <button class="btn btn-success px-1 btn-sm mr-1"><i class="material-icons md-18">mood</i></button>
+                                                            <button class="btn btn-success px-1 btn-sm mr-1"><i class="material-icons md-18">person_add</i></button>
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -928,8 +926,7 @@
                                                             <small class="text-mute vm">17/01/2020</small>
                                                         </td>
                                                         <td class="text-right footable-last-visible" style="display: table-cell;">
-                                                            <button class="btn btn-info px-1 btn-sm mr-1"><i class="material-icons md-18">edit</i></button>
-                                                            <button class="btn btn-success px-1 btn-sm"><i class="material-icons md-18">call</i></button>
+                                                            <button class="btn btn-info px-1 btn-sm mr-1"><i class="material-icons md-18">message</i></button>
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -949,8 +946,7 @@
                                                             <small class="text-mute vm">17/01/2020</small>
                                                         </td>
                                                         <td class="text-right footable-last-visible" style="display: table-cell;">
-                                                            <button class="btn btn-info px-1 btn-sm mr-1"><i class="material-icons md-18">edit</i></button>
-                                                            <button class="btn btn-success px-1 btn-sm"><i class="material-icons md-18">call</i></button>
+                                                            <button class="btn btn-info px-1 btn-sm mr-1"><i class="material-icons md-18">message</i></button>
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -970,8 +966,7 @@
                                                             <small class="text-mute vm">17/01/2020</small>
                                                         </td>
                                                         <td class="text-right footable-last-visible" style="display: table-cell;">
-                                                            <button class="btn btn-info px-1 btn-sm mr-1"><i class="material-icons md-18">edit</i></button>
-                                                            <button class="btn btn-success px-1 btn-sm"><i class="material-icons md-18">call</i></button>
+                                                            <button class="btn btn-info px-1 btn-sm mr-1"><i class="material-icons md-18">message</i></button>
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -991,8 +986,7 @@
                                                             <small class="text-mute vm">17/01/2020</small>
                                                         </td>
                                                         <td class="text-right footable-last-visible" style="display: table-cell;">
-                                                            <button class="btn btn-info px-1 btn-sm mr-1"><i class="material-icons md-18">edit</i></button>
-                                                            <button class="btn btn-success px-1 btn-sm"><i class="material-icons md-18">call</i></button>
+                                                            <button class="btn btn-info px-1 btn-sm mr-1"><i class="material-icons md-18">message</i></button>
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -1012,8 +1006,7 @@
                                                             <small class="text-mute vm">17/01/2020</small>
                                                         </td>
                                                         <td class="text-right footable-last-visible" style="display: table-cell;">
-                                                            <button class="btn btn-info px-1 btn-sm mr-1"><i class="material-icons md-18">edit</i></button>
-                                                            <button class="btn btn-success px-1 btn-sm"><i class="material-icons md-18">call</i></button>
+                                                            <button class="btn btn-info px-1 btn-sm mr-1"><i class="material-icons md-18">message</i></button>
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -1034,8 +1027,7 @@
                                                             <small class="text-mute vm">17/01/2020</small>
                                                         </td>
                                                         <td class="text-right footable-last-visible" style="display: table-cell;">
-                                                            <button class="btn btn-info px-1 btn-sm mr-1"><i class="material-icons md-18">edit</i></button>
-                                                            <button class="btn btn-success px-1 btn-sm"><i class="material-icons md-18">call</i></button>
+                                                            <button class="btn btn-info px-1 btn-sm mr-1"><i class="material-icons md-18">message</i></button>
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -1055,8 +1047,7 @@
                                                             <small class="text-mute vm">17/01/2020</small>
                                                         </td>
                                                         <td class="text-right footable-last-visible" style="display: table-cell;">
-                                                            <button class="btn btn-info px-1 btn-sm mr-1"><i class="material-icons md-18">edit</i></button>
-                                                            <button class="btn btn-success px-1 btn-sm"><i class="material-icons md-18">call</i></button>
+                                                            <button class="btn btn-info px-1 btn-sm mr-1"><i class="material-icons md-18">message</i></button>
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -1077,8 +1068,7 @@
                                                             <small class="text-mute vm">17/01/2020</small>
                                                         </td>
                                                         <td class="text-right footable-last-visible" style="display: table-cell;">
-                                                            <button class="btn btn-info px-1 btn-sm mr-1"><i class="material-icons md-18">edit</i></button>
-                                                            <button class="btn btn-success px-1 btn-sm"><i class="material-icons md-18">call</i></button>
+                                                            <button class="btn btn-info px-1 btn-sm mr-1"><i class="material-icons md-18">message</i></button>
                                                         </td>
                                                     </tr>
                                                 </tbody>
