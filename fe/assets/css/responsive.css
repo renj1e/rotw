@@ -136,7 +136,7 @@
 	}
 	.rate-share{top: 120%;}
 	.fixed-bg {
-	    background-attachment: initial !important;
+	    background-attachment: fixed !important;
 	}
 
 
@@ -519,7 +519,7 @@
 
 @media (max-width:480px){
 	.fixed-bg {
-	    background-attachment: initial !important;
+	    background-attachment: fixed !important;
 	}
 	.block.top-padd30 {
 		padding: 30px 10px;
