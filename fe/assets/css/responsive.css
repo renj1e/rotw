@@ -1021,7 +1021,8 @@
 
 @media (max-width:375px){
 	.restaurants-wrapper.style2 > li {
-		width: 50%;
+		width: calc(100%/3);
+		display: inline-block;
 	}
 	.restaurants-wrapper.style2 .top-restaurant > a {
 		box-shadow: 0 3px 0 rgba(0, 0, 0, 0.07);

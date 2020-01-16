@@ -135,7 +135,7 @@ $(document).ready(function(){
 
   //===== Sticky Header =====//
   var menu_height = $('header').innerHeight();
-  var screen_height = $(window).height() + 130;
+  var screen_height = $(window).height();
   $(window).on("scroll", function () {
     var scroll = $(window).scrollTop();
     if (scroll >= menu_height) {
@@ -147,7 +147,7 @@ $(document).ready(function(){
   if ($('header').hasClass('stick')) {
     // $('.landing-block').css({'padding-top': menu_height});
   }
-  $('.landing-block').css({'height': '-webkit-fill-available'});
+  $('.landing-block').css({'height': screen_height});
 
   //===== Responsive Header =====//
   $('.menu-btn').on('click', function () {
